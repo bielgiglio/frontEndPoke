@@ -1,0 +1,104 @@
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            transition: background-color 0.3s ease;
+        }
+
+        #app-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 350px;
+        }
+
+        #mainTitle {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        #pokemonName, #pokemonImage, #pokemonInfo, #errorMessage {
+            display: none;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        #pokemonImage {
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            width: 150px;
+            height: 150px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        #errorMessage {
+            color: red;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        #pokemonInput {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            background-color: #ffcc01;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 5px 0;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ffb701;
+        }
+
+        button:active {
+            background-color: #e6b101;
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .nav-buttons button {
+            width: 48%;
+        }
+
+        @media (max-width: 768px) {
+            #app-container {
+                width: 90%;
+            }
+        }

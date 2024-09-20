@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app-container">
+        <h1 id="mainTitle">Buscador de Pokémon</h1>
+        
+        <h2 id="pokemonName">Nome do Pokémon</h2>
+        <img id="pokemonImage" src="" alt="Imagem do Pokémon">
+        <p id="pokemonInfo">Informações do Pokémon aparecerão aqui</p>
+            
+        <input type="text" id="pokemonInput" placeholder="Digite o nome ou ID do Pokémon">
+    
+        <button onclick="searchPokemon()">Pesquisar</button>
+    
+        <div class="nav-buttons">
+            <button onclick="previousPokemon()">Anterior</button>
+            <button onclick="nextPokemon()">Próximo</button>
+        </div>
+    
+        <p id="errorMessage">Pokémon não encontrado. Tente outro nome ou ID.</p>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
